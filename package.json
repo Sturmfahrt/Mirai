@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "node.js port of mirai",
   "main": "mybot.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomiclord/Mirai.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
