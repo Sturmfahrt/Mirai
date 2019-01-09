@@ -43,3 +43,6 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 client.login(config.token);
+client.on('ready', () => {
+  client.user.setGame('use ~help for help')
+});
