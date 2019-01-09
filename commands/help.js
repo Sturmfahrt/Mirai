@@ -1,10 +1,37 @@
 exports.run = (client, message, args) => {
     message.delete();
-    message.channel.send("help command WIP, the following commands are in existance.").catch(console.error);
-    message.channel.send("help").catch(console.error);
-    message.channel.send("ping").catch(console.error);
-    message.channel.send("play").catch(console.error);
-    message.channel.send("qizman").catch(console.error);
-    message.channel.send("the current multi message help thingy is only temporary. this is until i get a proper help command response code figured out").catch(console.error);
+    message.channel.send({embed: {
+       color: 3447003,
+        author: {
+          name: client.user.username,
+          icon_url: client.user.avatarURL
+        },
+        title: "Mirai Bot",
+        url: "https://github.com/atomiclord/Mirai",
+        description: "this is the help page.",
+        fields: [{
+           name: "help",
+           value: "self explanatory"
+          },
+         {
+            name: "ping",
+           value: "used to see if the bot is responding"
+         },
+         {
+            name: "play",
+            value: "supposed to play music, but has not been implemented or even made yet."
+         },
+          {
+           name: "qizman",
+            value: ";)"
+          }
+        ],
+       timestamp: new Date(),
+       footer: {
+          icon_url: client.user.avatarURL,
+         text: "© Example"
+        }
+      }
+    });
   }
   
