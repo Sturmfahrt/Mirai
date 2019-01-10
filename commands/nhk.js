@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
         {
            const dispatcher = connection.playFile('/home/max/Documents/Mirai/audio/Puzzle.mp3');
            dispatcher.on("end", end => {
-               //
+               voiceChannel.leave();
              });
          }).catch(err => console.log(err));
 }
