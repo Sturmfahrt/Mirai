@@ -1,4 +1,5 @@
 exports.run = (client, message, args) => {
+  var song = args[0]
   message.delete();
   const fs = require('fs');
   const ytdl = require('ytdl-core');
@@ -14,5 +15,8 @@ exports.run = (client, message, args) => {
         voiceChannel.leave();
       });
     }).catch(err => console.log(err));
-    message.reply('your song is coming up.')
+    ytdl.getInfo(song, function(err, info) {
+      console.log(info.title);
+      message.reply(`${info.title} coming up.`);
+    });
 }

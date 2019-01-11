@@ -10,20 +10,24 @@ exports.run = (client, message, args) => {
         url: "https://github.com/atomiclord/Mirai",
         description: "this is the help page.",
         fields: [{
-           name: "help",
-           value: "self explanatory"
+            name: "help",
+            value: "self explanatory"
           },
          {
             name: "ping",
-           value: "used to see if the bot is responding"
+            value: "used to see if the bot is responding"
          },
          {
             name: "play",
-            value: "can play music. currently WIP."
+            value: "can play music. no queue system exists as this is currently WIP."
          },
           {
-           name: "qizman",
+            name: "qizman",
             value: ";)"
+          },
+          {
+            name: "leave",
+            value: "makes the bot leave the voice channel"
           }
         ],
        timestamp: new Date(),
