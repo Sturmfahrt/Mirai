@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
          },
          {
             name: "play",
-            value: "supposed to play music, but has not been implemented or even made yet."
+            value: "can play music. currently WIP."
          },
           {
            name: "qizman",
